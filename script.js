@@ -48,12 +48,24 @@ let phi = document.getElementById('phi')
 let hitungLingkaran = document.getElementById('hitungLingkaran')
 let luasLingkaran = document.getElementById('luasLingkaran')
 hitungLingkaran.addEventListener('click', function () {
-    console.log(phi.value)
     if(phi.value == '22/7') {
         luasLingkaran.value = (22 * jari.value * jari.value) / 7
     } else {
         luasLingkaran.value = phi.value * jari.value * jari.value
     }
+})
+
+// End
+
+// Hitung Segitiga
+
+let alas = document.getElementById('alas')
+let tinggi = document.getElementById('tinggi')
+let hitungSegitiga = document.getElementById('hitungSegitiga')
+let luasSegitiga = document.getElementById('luasSegitiga')
+
+hitungSegitiga.addEventListener('click', function () {
+    luasSegitiga.value = (alas.value * tinggi.value) / 2
 })
 
 // End
